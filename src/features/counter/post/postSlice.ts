@@ -23,7 +23,7 @@ export const postSlice = createSlice({
     name,
     initialState,
     reducers: {
-        updateStatus: (state, action: PayloadAction<'idle'>) => {
+        updateStatus: (state, action) => {
             state.status = action.payload
         }
     },
